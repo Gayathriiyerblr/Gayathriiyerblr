@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Engineer GitHub Profile README Generator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav-link"><i class="fas fa-star"></i> Star on GitHub</a>
+      <a href="#" class="nav-link"><i class="fas fa-code-branch"></i> Fork</a>
+      <a href="#" class="nav-link"><i class="fas fa-bug"></i> Report Bug</a>
+      <a href="#" class="nav-link"><i class="fas fa-lightbulb"></i> Features</a>
+    </nav>
+    <div class="header-content">
+      <div class="header-logo">QA<span>G</span></div>
+      <h1 class="header-title">QA Engineer GitHub Profile README Generator</h1>
+      <p class="header-subtitle">
+        <i class="fas fa-flask"></i> Build your perfect QA portfolio in minutes
+        <i class="fas fa-flask"></i>
+      </p>
+      <div class="header-badges">
+        <img src="https://img.shields.io/badge/Made_for-QA_Engineers-6C3FD1?style=flat-square" alt="Made for QA Engineers">
+        <img src="https://img.shields.io/badge/100%25-Free-00C853?style=flat-square" alt="Free">
+        <img src="https://img.shields.io/badge/No_Signup-Required-FF6D00?style=flat-square" alt="No Signup Required">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Section: Title -->
+    <section class="form-section">
+      <h2 class="section-title">Title</h2>
+      <div class="title-row">
+        <div class="title-options">
+          <label class="radio-label"><input type="radio" name="titleTag" value="h1" checked> H1</label>
+          <label class="radio-label"><input type="radio" name="titleTag" value="h2"> H2</label>
+          <label class="radio-label"><input type="radio" name="titleTag" value="p"> p</label>
+        </div>
+        <input type="text" id="titleText" class="form-input full-width" placeholder="Hi 👋, I'm [Your Name]" value="">
+      </div>
+    </section>
+
+    <!-- Section: Subtitle -->
+    <section class="form-section">
+      <h2 class="section-title">Subtitle</h2>
+      <input type="text" id="subtitleText" class="form-input full-width" placeholder="A passionate QA Engineer ensuring software quality">
+    </section>
+
+    <!-- Section: Work -->
+    <section class="form-section">
+      <h2 class="section-title">Work</h2>
+      <div class="work-grid">
+        <div class="work-item">
+          <label>🔭 I'm currently working at</label>
+          <div class="work-inputs">
+            <input type="text" id="workCompany" class="form-input" placeholder="Company Name">
+            <input type="text" id="workCompanyLink" class="form-input" placeholder="Company URL">
+          </div>
+        </div>
+        <div class="work-item">
+          <label>🤝 I'm looking to collaborate on</label>
+          <div class="work-inputs">
+            <input type="text" id="collabProject" class="form-input" placeholder="Project Name">
+            <input type="text" id="collabLink" class="form-input" placeholder="Project URL">
+          </div>
+        </div>
+        <div class="work-item">
+          <label>🔍 I'm looking for help with</label>
+          <div class="work-inputs">
+            <input type="text" id="helpProject" class="form-input" placeholder="Project Name">
+            <input type="text" id="helpLink" class="form-input" placeholder="Project URL">
+          </div>
+        </div>
+        <div class="work-item">
+          <label>🌱 I'm currently learning</label>
+          <input type="text" id="learning" class="form-input full-width" placeholder="Playwright, Performance Testing, etc.">
+        </div>
+        <div class="work-item">
+          <label>💬 Ask me about</label>
+          <input type="text" id="askAbout" class="form-input full-width" placeholder="Test Automation, CI/CD, API Testing">
+        </div>
+        <div class="work-item">
+          <label>📫 How to reach me</label>
+          <input type="text" id="reachMe" class="form-input full-width" placeholder="your.email@example.com">
+        </div>
+        <div class="work-item">
+          <label>🌐 All of my projects are available at</label>
+          <input type="text" id="portfolioLink" class="form-input full-width" placeholder="https://your-portfolio.com">
+        </div>
+        <div class="work-item">
+          <label>📝 I regularly write articles on</label>
+          <input type="text" id="blogLink" class="form-input full-width" placeholder="https://your-blog.com">
+        </div>
+        <div class="work-item">
+          <label>📄 Know about my experiences</label>
+          <input type="text" id="resumeLink" class="form-input full-width" placeholder="https://your-resume-link.com">
+        </div>
+        <div class="work-item">
+          <label>⚡ Fun fact</label>
+          <input type="text" id="funFact" class="form-input full-width" placeholder="I think bugs are just undocumented features 🐛">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: QA Expertise -->
+    <section class="form-section">
+      <h2 class="section-title">QA Expertise & Testing Types</h2>
+      <p class="section-desc">Select your areas of testing expertise</p>
+      <div id="expertise-container" class="skills-grid"></div>
+    </section>
+
+    <!-- Section: Skills -->
+    <section class="form-section">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-search">
+        <input type="text" id="skillSearch" class="form-input" placeholder="🔍 Search skills...">
+      </div>
+      <div id="skills-container"></div>
+    </section>
+
+    <!-- Section: QA Certifications -->
+    <section class="form-section">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-desc">Select your QA certifications</p>
+      <div id="certifications-container" class="skills-grid"></div>
+    </section>
+
+    <!-- Section: QA Methodologies -->
+    <section class="form-section">
+      <h2 class="section-title">QA Methodologies</h2>
+      <p class="section-desc">Select methodologies you practice</p>
+      <div id="methodologies-container" class="skills-grid"></div>
+    </section>
+
+    <!-- Section: Social -->
+    <section class="form-section">
+      <h2 class="section-title">Social</h2>
+      <div class="social-grid">
+        <div class="social-item">
+          <i class="fab fa-github"></i>
+          <input type="text" id="socialGithub" class="form-input" placeholder="GitHub username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-linkedin"></i>
+          <input type="text" id="socialLinkedin" class="form-input" placeholder="LinkedIn username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-twitter"></i>
+          <input type="text" id="socialTwitter" class="form-input" placeholder="Twitter username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-stack-overflow"></i>
+          <input type="text" id="socialStackoverflow" class="form-input" placeholder="Stack Overflow user ID">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-medium"></i>
+          <input type="text" id="socialMedium" class="form-input" placeholder="Medium username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-dev"></i>
+          <input type="text" id="socialDevto" class="form-input" placeholder="Dev.to username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-hashnode"></i>
+          <input type="text" id="socialHashnode" class="form-input" placeholder="Hashnode username">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-youtube"></i>
+          <input type="text" id="socialYoutube" class="form-input" placeholder="YouTube channel name">
+        </div>
+        <div class="social-item">
+          <i class="fas fa-globe"></i>
+          <input type="text" id="socialWebsite" class="form-input" placeholder="Personal website URL">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-discord"></i>
+          <input type="text" id="socialDiscord" class="form-input" placeholder="Discord invite link or user ID">
+        </div>
+        <div class="social-item">
+          <i class="fas fa-envelope"></i>
+          <input type="text" id="socialEmail" class="form-input" placeholder="Email address">
+        </div>
+        <div class="social-item">
+          <i class="fab fa-instagram"></i>
+          <input type="text" id="socialInstagram" class="form-input" placeholder="Instagram username">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Add-ons -->
+    <section class="form-section">
+      <h2 class="section-title">Add-ons</h2>
+      <div class="addons-grid">
+        <label class="addon-item">
+          <input type="checkbox" id="addonVisitors" checked>
+          <span>Display profile visitors count badge 👀</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonTrophies">
+          <span>Display GitHub trophies 🏆</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonStats" checked>
+          <span>Display GitHub stats card 📊</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonStreak" checked>
+          <span>Display GitHub streak stats 🔥</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonTopLangs" checked>
+          <span>Display top languages card 💻</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonContribGraph">
+          <span>Display contribution graph 📈</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonTypingSvg" checked>
+          <span>Display typing animation in header ⌨️</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonWaveHeader">
+          <span>Display wave header banner 🌊</span>
+        </label>
+        <label class="addon-item">
+          <input type="checkbox" id="addonQuote">
+          <span>Display random dev quote 💭</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Section: Theme -->
+    <section class="form-section">
+      <h2 class="section-title">Stats Theme</h2>
+      <div class="theme-grid">
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="default" checked>
+          <span>Default</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="radical">
+          <span>Radical</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="tokyonight">
+          <span>Tokyo Night</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="dracula">
+          <span>Dracula</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="dark">
+          <span>Dark</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="onedark">
+          <span>One Dark</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="gruvbox">
+          <span>Gruvbox</span>
+        </label>
+        <label class="theme-option">
+          <input type="radio" name="statsTheme" value="material-palenight">
+          <span>Material Palenight</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Generate Buttons -->
+    <div class="generate-section">
+      <button id="btnGenerate" class="btn btn-primary">
+        <i class="fas fa-magic"></i> Generate README
+      </button>
+      <button id="btnPreview" class="btn btn-secondary">
+        <i class="fas fa-eye"></i> Preview
+      </button>
+      <button id="btnReset" class="btn btn-secondary" style="color:#c62828;border-color:#c62828;">
+        <i class="fas fa-undo"></i> Reset
+      </button>
+    </div>
+
+    <!-- Output Section -->
+    <section id="output-section" class="form-section output-section" style="display:none;">
+      <div class="output-header">
+        <h2 class="section-title">Generated README.md</h2>
+        <div class="output-actions">
+          <button id="btnCopy" class="btn btn-small">
+            <i class="fas fa-copy"></i> Copy Markdown
+          </button>
+          <button id="btnDownload" class="btn btn-small btn-success">
+            <i class="fas fa-download"></i> Download README.md
+          </button>
+        </div>
+      </div>
+
+      <div class="output-tabs">
+        <button class="tab-btn active" data-tab="markdown">Markdown</button>
+        <button class="tab-btn" data-tab="preview">Preview</button>
+      </div>
+
+      <div id="markdownTab" class="tab-content active">
+        <pre><code id="markdownOutput"></code></pre>
+      </div>
+      <div id="previewTab" class="tab-content">
+        <div id="previewOutput" class="preview-container"></div>
+      </div>
+    </section>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">QA<span>G</span></div>
+      <p>QA Engineer GitHub Profile README Generator</p>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+      </div>
+      <p class="footer-copy">Built with ❤️ for QA Engineers everywhere</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
